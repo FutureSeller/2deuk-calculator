@@ -5,7 +5,7 @@ import { GlobalNav } from '@/ui/global-nav';
 export const metadata = {
   title: {
     default: '이득 계산기',
-    template: '%s | 이득계산기',
+    template: '%s | 이득 계산기',
   },
   description: '어떤 상황에서 무엇이 이득인지 도움을 주는 계산기',
 };

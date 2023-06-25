@@ -4,7 +4,7 @@ import Link from 'next/link';
 export default function Home() {
   return (
     <div className="space-y-8">
-      <h1 className="text-xl font-medium text-black	 dark:text-gray-300">
+      <h1 className="text-3xl font-medium text-black dark:text-gray-300">
         지원하는 계산기들
       </h1>
       <div className="space-y-10 text-white">
