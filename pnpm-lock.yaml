@@ -2,6 +2,7 @@ lockfileVersion: 5.4
 
 specifiers:
   '@babel/plugin-syntax-typescript': ^7.22.5
+  '@emotion/is-prop-valid': ^1.2.1
   '@heroicons/react': ^2.0.18
   '@types/node': 20.2.5
   '@types/react': 18.2.7
@@ -25,6 +26,7 @@ specifiers:
   typescript: 5.0.4
 
 dependencies:
+  '@emotion/is-prop-valid': 1.2.1
   '@heroicons/react': 2.0.18_react@18.2.0
   '@types/node': 20.2.5
   '@types/react': 18.2.7

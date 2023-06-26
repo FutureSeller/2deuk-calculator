@@ -41,7 +41,7 @@ export default function Home() {
         })}
         {menu.map((section) => {
           return (
-            <div key={section.name} className="space-y-5">
+            <div key={`section-${section.name}`} className="space-y-5">
               <div className="text-xs font-semibold uppercase tracking-wider text-gray-400">
                 {section.name}
               </div>
@@ -50,7 +50,7 @@ export default function Home() {
                 {section.items.map((item) => {
                   return (
                     <Link
-                      key={item.name}
+                      key={`section-${item.name}`}
                       href={`/${item.slug}`}
                       className="group block space-y-1.5 rounded-lg bg-gray-900 px-5 py-3 hover:bg-gray-800"
                     >
