@@ -1,6 +1,6 @@
 'use client';
 
-import clsx from 'clsx';
+import tw from 'twin.macro';
 import Link from 'next/link';
 import { useSelectedLayoutSegment } from 'next/navigation';
 import { XMarkIcon, Bars3Icon } from '@heroicons/react/24/solid';
@@ -39,11 +39,12 @@ export function GlobalNav() {
         </button>
       </div>
       <div
-        className={clsx('overflow-y-auto lg:static lg:block', {
-          'fixed inset-x-0 bottom-0 top-14 mt-px bg-white dark:bg-black':
-            isOpen,
-          hidden: !isOpen,
-        })}
+        css={[
+          tw`overflow-y-auto lg:static lg:block`,
+          isOpen
+            ? tw`fixed inset-x-0 bottom-0 top-14 mt-px bg-white dark:bg-black`
+            : tw`hidden`,
+        ]}
       >
         <nav className="space-y-6 px-2 py-5">
           {menu.map((section) => {
@@ -81,14 +82,12 @@ function GlobalNavItem({
     <Link
       onClick={close}
       href={`/${item.slug}`}
-      className={clsx(
-        'block rounded-md px-3 py-2 text-sm font-medium hover:text-gray-300',
-        {
-          'text-gray-400 hover:bg-gray-800 dark:text-gray-400 dark:hover:bg-gray-800':
-            !isActive,
-          'bg-gray-800 text-gray-300 dark:text-white': isActive,
-        },
-      )}
+      css={[
+        tw`block rounded-md px-3 py-2 text-sm font-medium hover:text-gray-300`,
+        isActive
+          ? tw`bg-gray-800 text-gray-300 dark:text-white`
+          : tw`text-gray-400 hover:bg-gray-800 dark:text-gray-400 dark:hover:bg-gray-800`,
+      ]}
     >
       {item.name}
     </Link>
