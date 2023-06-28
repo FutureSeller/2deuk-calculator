@@ -15,6 +15,7 @@ specifiers:
   eslint: 8.41.0
   eslint-config-next: 13.4.4
   next: 13.4.4
+  next-themes: ^0.2.1
   postcss: ^8.4.24
   prettier: ^2.8.8
   prettier-plugin-tailwindcss: ^0.3.0
@@ -34,6 +35,7 @@ dependencies:
   eslint: 8.41.0
   eslint-config-next: 13.4.4_opaykosi7ysrbskpnffskmbrki
   next: 13.4.4_pbqkqtl3ytrxhl67w6o5ecjene
+  next-themes: 0.2.1_z4pol2qj2yv3um3jqqobs4b3eu
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
   styled-components: 6.0.0-rc.6_hnfhdlwmftqs43jf4g35c3bd6e
@@ -3386,6 +3388,18 @@ packages:
 
   /natural-compare/1.4.0:
     resolution: {integrity: sha512-OWND8ei3VtNC9h7V60qff3SVobHr996CTwgxubgyQYEpg290h9J0buyECNNJexkFm5sOajh5G116RYA1c8ZMSw==}
+    dev: false
+
+  /next-themes/0.2.1_z4pol2qj2yv3um3jqqobs4b3eu:
+    resolution: {integrity: sha512-B+AKNfYNIzh0vqQQKqQItTS8evEouKD7H5Hj3kmuPERwddR2TxvDSFZuTj6T7Jfn1oyeUyJMydPl1Bkxkh0W7A==}
+    peerDependencies:
+      next: '*'
+      react: '*'
+      react-dom: '*'
+    dependencies:
+      next: 13.4.4_pbqkqtl3ytrxhl67w6o5ecjene
+      react: 18.2.0
+      react-dom: 18.2.0_react@18.2.0
     dev: false
 
   /next/13.4.4_pbqkqtl3ytrxhl67w6o5ecjene:
