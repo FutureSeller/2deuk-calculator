@@ -5,7 +5,7 @@ import Link from 'next/link';
 import { useSelectedLayoutSegment } from 'next/navigation';
 import { XMarkIcon, Bars3Icon } from '@heroicons/react/24/solid';
 
-import { useDisclosure } from '@/hooks/useDisclosure';
+import { useDisclosure } from '@/hooks/use-disclosure';
 import { menu } from '@/constants/menu';
 
 import type { MenuItem } from '@/constants/menu';

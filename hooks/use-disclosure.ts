@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState } from 'react';
 
 export const useDisclosure = (defaultValue?: boolean) => {
   const [isOpen, setIsOpen] = useState(!!defaultValue);
