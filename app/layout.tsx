@@ -21,7 +21,7 @@ export default function RootLayout({
   return (
     <html lang="ko" className="dark" suppressHydrationWarning>
       <head></head>
-      <body className="dark:bg-gray-1100 flex h-screen overflow-y-hidden bg-white">
+      <body className="dark:bg-gray-1100 flex h-screen min-w-[320px] overflow-y-hidden bg-white">
         <Providers>
           <StyledComponentsRegistry>
             <GlobalNav />

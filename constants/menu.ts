@@ -5,9 +5,9 @@ export interface MenuItem {
 }
 
 export const buyOneGetOneFree: MenuItem = {
-  name: '1 + 1 이득 계산기',
+  name: '단위당 가격 계산기',
   slug: 'buy-one-get-one-free',
-  description: '원쁠원, 투쁠원 행사를 할 때, 하나당 가격은 어느정도할까?',
+  description: '원쁠원, 투쁠원 행사를 할 때, 단위당 가격은 얼마일까?',
 };
 
 export const menu: { name: string; items: MenuItem[] }[] = [
